@@ -136,7 +136,7 @@ Code review notes:
 		'''
 * Unnecessary unittests
   Imo if taking time to write out unittests unnecessary in this case, as it is a simple coding challange. If tested IRL, just talk through the implemented safe-guards and edge-case handling.
-  The unittests are not needed for interview questions unless you going for a role that involves a strong emphasis on test-driven development (TDD) or the development of production-quality code.
+  The unittests are not needed for most of the interview questions, unless you going for a role that involves a strong emphasis on test-driven development (TDD) or the development of production-quality code.
 
 * Funky unit tests
   Write just enough tests to cover the most critical functionality.
@@ -214,6 +214,14 @@ NITPICKS:
 
 * Might be a good idea to document thought-process via comments at least in the beginnnig (remove after done)
 
+* Keep in mind fastest/shortest python solution is
+	def smallest_k(arr, k):
+	    arr.sort()
+	    result = arr[:k]
+	    return result
+	unsorted = [1, 7, 4, 1, 10, 9, -2, 10, 10, 0]
+	smallest = smallest_k(unsorted, 5)
+	print(smallest)
 """
 
 
