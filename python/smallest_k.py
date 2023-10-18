@@ -222,6 +222,36 @@ NITPICKS:
 	unsorted = [1, 7, 4, 1, 10, 9, -2, 10, 10, 0]
 	smallest = smallest_k(unsorted, 5)
 	print(smallest)
+   
+   
+   but technically it should be using a heap 
+   
+	import heapq
+
+	def smallest_k(arr, k):
+	    # Check if k is greater than the length of the array
+	    if k >= len(arr):
+	        return sorted(arr)
+	    
+	    # Create a min-heap of size k
+	    min_heap = arr[:k]
+	    heapq.heapify(min_heap)
+	    
+	    # Iterate through the remaining elements in the array
+	    for num in arr[k:]:
+	        # If the current element is smaller than the largest element in the min-heap,
+	        # replace the largest element with the current element
+	        if num < min_heap[-1]:
+	            heapq.heappop(min_heap)
+	            heapq.heappush(min_heap, num)
+	    
+	    # Convert the min-heap to a sorted list and return it
+	    return sorted(min_heap)
+
+	# Test the function
+	unsorted = [1, 7, 4, 1, 10, 9, -2, 10, 10, 0]
+	smallest = smallest_k(unsorted, 5)
+	print(smallest)
 """
 
 
