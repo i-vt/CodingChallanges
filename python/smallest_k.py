@@ -214,7 +214,7 @@ NITPICKS:
 
 * Might be a good idea to document thought-process via comments at least in the beginnnig (remove after done)
 
-* Keep in mind fastest/shortest python solution is
+* Keep in mind shortest python solution is, 
 	def smallest_k(arr, k):
 	    arr.sort()
 	    result = arr[:k]
@@ -222,10 +222,8 @@ NITPICKS:
 	unsorted = [1, 7, 4, 1, 10, 9, -2, 10, 10, 0]
 	smallest = smallest_k(unsorted, 5)
 	print(smallest)
-   
-   
-   but technically it should be using a heap 
-   
+
+  but technically it should be using a heap (O(N log N)) 
 	import heapq
 
 	def smallest_k(arr, k):
@@ -252,6 +250,7 @@ NITPICKS:
 	unsorted = [1, 7, 4, 1, 10, 9, -2, 10, 10, 0]
 	smallest = smallest_k(unsorted, 5)
 	print(smallest)
+
 """
 
 
