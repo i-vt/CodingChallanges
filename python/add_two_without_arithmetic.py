@@ -37,9 +37,14 @@ if __name__ == '__main__':
 """
 time to resolve: 9 to 13 minutes & 1 re-run (b/c of typo in the problem statement & ended up copy-pasta the error over)
 
-* Overall senior-level speed, but the solution provided could be a bit more robust. It would take like 1 minute to slap a a generic try/except Exception as ex: or something like that.
+* Overall senior-level speed, but the solution provided could be better. 
+  It would take like 1 minute to slap a a generic try/except Exception as ex: or something like that.
+  you could have used a string, which would have avoided the need to create another data structure.
+	for _ in range(value_input1): return_string = f"{return_string}{x}"
+	for _ in range(value_input1): return_string = f"{return_string}{y}"
+	retun len(return_string)
 
-* Smarter decision would be use a bit-wise addition imo, but if the code works it works - kind of makes you look mid to junior level dev.
+* Smarter decision would be use a bit-wise addition keeping an O(n), but if the code works it works - kind of makes you look mid to junior level dev.
 	def add_two(value1, value2):
 	    MAX_INT = 0x7FFFFFFF  # Max 32-bit signed integer
 
