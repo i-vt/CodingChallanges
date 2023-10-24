@@ -7,6 +7,22 @@ Return the quotient after dividing dividend by divisor.
 
 Note: Assume we are dealing with an environment that could only store integers within the 32-bit signed integer range: [−231, 231 − 1]. For this problem, if the quotient is strictly greater than 231 - 1, then return 231 - 1, and if the quotient is strictly less than -231, then return -231.
 """
+#Technically the correct answer in leetcode, even though it gives an aswer of -2147483648 / -1 == 2147483647 ????
+class Solution:
+    def divide(self, dividend: int, divisor: int) -> int:
+        sign = -1 if (dividend >= 0 and divisor < 0) or (dividend < 0 and divisor >= 0) else 1
+        dividend = abs(dividend)
+        divisor = abs(divisor)
+        result = len(range(0, dividend-divisor+1, divisor))
+        if sign == -1:
+            result = -result
+        minus_limit = -(2**31)
+        plus_limit = (2**31 - 1)
+        result = min(max(result, minus_limit), plus_limit)
+        return result
+
+
+# Wrong way to go about it, but I tried lmao:
 class Solution:
     def divide(self, dividend: int, divisor: int) -> int:
         x = "AaaaaAAaaAaaAAaa"
