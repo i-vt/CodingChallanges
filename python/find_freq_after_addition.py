@@ -35,3 +35,4 @@ class Solution:
 
 
 # Not optimized but works. Took around 45 minutes to get it to functional state with multiple reruns. LC did not accept my solution lol - bc apparently it ran out of resources
+# Actual solution is using a sliding window
