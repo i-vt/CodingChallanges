@@ -6,6 +6,7 @@ class Solution:
         while nums[0] != nums[-1]:
             # 7:10 start, 7:18 started timing
             rev_nums = nums[::-1]
+            # took me 20 mins to trouble shoot the fact that I had to pull out the [::-1] to break it up into another variable
             for number in rev_nums:
                 if nums[-1] > number: 
                     nums[-1] = number
