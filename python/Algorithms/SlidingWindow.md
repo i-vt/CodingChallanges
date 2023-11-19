@@ -4,19 +4,19 @@
 Identifying and solving sliding window problems requires a specific approach, often applicable in scenarios where you're dealing with contiguous sequences or subarrays in an array or string. Here's how to identify and think about such problems, along with a sample Python code as a boilerplate.
 Identifying a Sliding Window Problem
 
-    Problem Statement: Look for problems asking for something related to subarrays or substrings, especially where the size of the subarray or substring is a factor.
-    Optimization Requirement: These problems often involve optimizing for a certain condition, like finding the longest/shortest subarray or maximum/minimum sum.
-    Continuous Data: The data in question is usually continuous and ordered, like an array or string.
+- Problem Statement: Look for problems asking for something related to subarrays or substrings, especially where the size of the subarray or substring is a factor.
+- Optimization Requirement: These problems often involve optimizing for a certain condition, like finding the longest/shortest subarray or maximum/minimum sum.
+- Continuous Data: The data in question is usually continuous and ordered, like an array or string.
 
 ## Thought process
 Thinking When Solving
 
-    Define Window Size: Determine if the window size is fixed or variable. Fixed-size windows are simpler, whereas variable-size windows require dynamic adjustments.
-    Initialization: Initialize variables to track the current window's start and end, and any other necessary data like sum, length, or character counts.
-    Sliding the Window: Move the window across the data, adjusting its size if necessary. This usually involves incrementing the end pointer, and then adjusting the start pointer based on the problem's conditions.
-    Check Conditions: At each step, check whether the current window meets the problem's criteria (e.g., sum equals a target value).
-    Update Solution: If the condition is met, update the answer (e.g., record the maximum length, minimum sum, etc.).
-    Edge Cases: Consider edge cases, especially with strings or arrays with unique constraints (like repeating characters).
+1. Define Window Size: Determine if the window size is fixed or variable. Fixed-size windows are simpler, whereas variable-size windows require dynamic adjustments.
+2. Initialization: Initialize variables to track the current window's start and end, and any other necessary data like sum, length, or character counts.
+3. Sliding the Window: Move the window across the data, adjusting its size if necessary. This usually involves incrementing the end pointer, and then adjusting the start pointer based on the problem's conditions.
+4. Check Conditions: At each step, check whether the current window meets the problem's criteria (e.g., sum equals a target value).
+5. Update Solution: If the condition is met, update the answer (e.g., record the maximum length, minimum sum, etc.).
+6. Edge Cases: Consider edge cases, especially with strings or arrays with unique constraints (like repeating characters).
 
 
 ## Boilerplate
