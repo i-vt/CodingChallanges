@@ -1,3 +1,4 @@
+#https://leetcode.com/problems/reduction-operations-to-make-the-array-elements-equal/
 class Solution:
     def reductionOperations(self, nums: List[int]) -> int:
         
@@ -14,3 +15,16 @@ class Solution:
                     break
             nums.sort()
         return counter
+#Technically works, but apparently takes up too much memory :(
+
+# Solution:
+class Solution:
+    def reductionOperations(self, nums: List[int]) -> int:
+        nums.sort(reverse=True)
+        res = 0
+
+        for i in range(1, len(nums)):
+            if nums[i] != nums[i-1]:
+                res += i
+
+        return res
