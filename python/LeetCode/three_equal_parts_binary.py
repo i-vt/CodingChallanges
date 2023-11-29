@@ -121,4 +121,14 @@ class Solution:
 """
 
 
+"""
+    enumerate(arr): This function is used to iterate over the elements of the arr list while keeping track of their indices. It returns pairs of (index, value) for each element in arr.
+
+    for i, j in enumerate(arr): This part of the code iterates over each element in arr, and for each element, it assigns the index to i and the value to j.
+
+    if j == 1: This is a conditional statement that checks if the value j is equal to 1. If the condition is true, the corresponding index i is included in the list comprehension.
+
+    [i for i, j in enumerate(arr) if j == 1]: This is a list comprehension that creates a list of indices (i) for elements in arr where the value (j) is equal to 1. So, the ones list will contain the indices of all occurrences of 1 in the arr list.
+"""
+
         
