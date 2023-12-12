@@ -10,7 +10,7 @@ Identifying a Radix Problem
 Thinking Process for Solving Radix Problems
 
 1. Understand the Bases: Know how different bases work. For example, in base 2, each digit can be 0 or 1, while in base 16, digits can be 0-9 or A-F.
-2. Conversion Methodology: For conversion, understand the principles of each base. For example, in base 10, the value 123 represents 1×102+2×101+3×1001×102+2×101+3×100.
+2. Conversion Methodology: For conversion, understand the principles of each base. For example, in base 10, the value 123 represents 1×(10^2)+(2×10^1)+(3×10^0).
 3. Algorithmic Approach: Design a step-by-step approach for conversion. This may involve dividing and getting remainders for conversion to a higher base or multiplying and adding for conversion to a lower base.
 4. Edge Cases: Consider edge cases, such as very large numbers, non-standard bases, or invalid input formats.
 
